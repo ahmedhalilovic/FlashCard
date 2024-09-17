@@ -10,6 +10,7 @@ import SwiftUI
 struct QuestionListView: View {
     @Environment(\.managedObjectContext) private var viewContext
 
+    // Fetch flashcards from Core Data
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \Item.question, ascending: true)],
         animation: .default)
@@ -24,7 +25,7 @@ struct QuestionListView: View {
                 ForEach(items) { item in
                     Text(item.question!)
                 }
-                .onDelete(perform: deleteItems)
+                .onDelete(perform: deleteItems) // Allow items to be deleted
             }
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
@@ -34,27 +35,27 @@ struct QuestionListView: View {
                             Label("Add Item", systemImage: "plus")
                         }
                         
+                        // Button to enter edit mode
                         EditButton()
                     }
                 }
             }
             .navigationTitle("Questions")
-            .navigationViewStyle(StackNavigationViewStyle()) // It will display nicer on iPad
+            .navigationViewStyle(StackNavigationViewStyle()) // It will display better on iPad
         }
         .sheet(isPresented: $showAddQuestionView) {
             AddQeustionView()
         }
     }
     
+    // Function to delete flashcards
     private func deleteItems(offsets: IndexSet) {
         withAnimation {
             offsets.map { items[$0] }.forEach(viewContext.delete)
 
             do {
-                try viewContext.save()
+                try viewContext.save() // Save changes to Core Data
             } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
                 let nsError = error as NSError
                 fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
             }

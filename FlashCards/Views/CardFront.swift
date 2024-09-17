@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct CardFront: View {
-    @Binding var degree: Double
+    @Binding var degree: Double // Rotation degree for the card
     let textContent: String
     
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 20)
-                .stroke(.green.opacity(0.5), lineWidth: 10)
+                .stroke(.green.opacity(0.5), lineWidth: 10) // Border of the card
                 .padding()
             RoundedRectangle(cornerRadius: 20)
                 .fill(.green.opacity(0.1))

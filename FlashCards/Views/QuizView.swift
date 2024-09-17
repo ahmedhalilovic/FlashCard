@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct QuizView: View {
-    @State var backDegree = 90.0
-    @State var frontDegree = 0.0
-    @State var isFlipped = false
-    let durationAndDelay: CGFloat = 0.2
+    @State var backDegree = 90.0 // Rotation degree for the back side of the card
+    @State var frontDegree = 0.0 // Rotation degree for the front side of the card
+    @State var isFlipped = false // Flag to track if the card is flipped
+    let durationAndDelay: CGFloat = 0.2 // Duration of flip animation
     
     @State var questionNum = 0
     
@@ -71,6 +71,7 @@ struct QuizView: View {
         }
     }
     
+    // Function to flip the card
     func flipCard() {
         isFlipped.toggle()
         

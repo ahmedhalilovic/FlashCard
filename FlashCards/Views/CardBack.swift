@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct CardBack: View {
-    @Binding var degree: Double
+    @Binding var degree: Double // Rotation degree for the card
     let textContent: String
     
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 20)
-                .stroke(.blue.opacity(0.5), lineWidth: 10)
+                .stroke(.blue.opacity(0.5), lineWidth: 10) // Border of the card
                 .padding()
             RoundedRectangle(cornerRadius: 20)
                 .fill(.blue.opacity(0.1))
@@ -30,7 +30,7 @@ struct CardBack: View {
                     .padding(25)
             }
         }
-        .rotation3DEffect(Angle(degrees: degree), axis: (x: 0, y: 1, z: 0))
+        .rotation3DEffect(Angle(degrees: degree), axis: (x: 0, y: 1, z: 0)) // 3D rotation effect using rotation3DEffect
     }
 }
 

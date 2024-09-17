@@ -11,10 +11,13 @@ import CoreData
 struct ContentView: View {
     var body: some View {
         TabView {
+            // First tab showing the list of questions
             QuestionListView()
                 .tabItem {
                     Label("Question List", systemImage: "list.dash")
                 }
+            
+            // Second tab showing the quiz view
             QuizView()
                 .tabItem {
                     Label("Quiz View", systemImage: "questionmark")
