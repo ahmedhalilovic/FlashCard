@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Custom font configuration -->
+    <key>UIAppFonts</key>
+    <array>
+        <string>Belaga.otf</string>
+    </array>
+
+    <!-- Scene configuration for SwiftUI apps -->
+    <key>UIApplicationSceneManifest</key>
+    <dict>
+        <key>UIApplicationSupportsMultipleScenes</key>
+        <false/> <!-- Set this to true if your app supports multiple scenes (e.g. iPad multitasking) -->
+        <key>UISceneConfigurations</key>
+        <dict>
+            <key>UIWindowSceneSessionRoleApplication</key>
+            <array>
+                <dict>
+                    <key>UISceneConfigurationName</key>
+                    <string>Default Configuration</string>
+                    <!-- Omit UISceneDelegateClassName and UISceneStoryboardFile for SwiftUI -->
+                </dict>
+            </array>
+        </dict>
+    </dict>
+</dict>
+</plist>

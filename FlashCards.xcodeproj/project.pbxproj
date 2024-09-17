@@ -13,6 +13,12 @@
 		EBC674A92C96DCC800A7DFF8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBC674A82C96DCC800A7DFF8 /* Preview Assets.xcassets */; };
 		EBC674AB2C96DCC800A7DFF8 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC674AA2C96DCC800A7DFF8 /* Persistence.swift */; };
 		EBC674AE2C96DCC800A7DFF8 /* FlashCards.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EBC674AC2C96DCC800A7DFF8 /* FlashCards.xcdatamodeld */; };
+		EBC674B52C96DEC200A7DFF8 /* Belaga.otf in Resources */ = {isa = PBXBuildFile; fileRef = EBC674B42C96DEC200A7DFF8 /* Belaga.otf */; };
+		EBC674B92C96E59700A7DFF8 /* QuestionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC674B82C96E59700A7DFF8 /* QuestionListView.swift */; };
+		EBC674BB2C97380E00A7DFF8 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC674BA2C97380E00A7DFF8 /* QuizView.swift */; };
+		EBC674BD2C973E1D00A7DFF8 /* AddQeustionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC674BC2C973E1D00A7DFF8 /* AddQeustionView.swift */; };
+		EBC674BF2C992F5100A7DFF8 /* CardFront.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC674BE2C992F5100A7DFF8 /* CardFront.swift */; };
+		EBC674C12C99344500A7DFF8 /* CardBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC674C02C99344500A7DFF8 /* CardBack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +29,13 @@
 		EBC674A82C96DCC800A7DFF8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EBC674AA2C96DCC800A7DFF8 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		EBC674AD2C96DCC800A7DFF8 /* FlashCards.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FlashCards.xcdatamodel; sourceTree = "<group>"; };
+		EBC674B42C96DEC200A7DFF8 /* Belaga.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Belaga.otf; sourceTree = "<group>"; };
+		EBC674B62C96E0A400A7DFF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		EBC674B82C96E59700A7DFF8 /* QuestionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionListView.swift; sourceTree = "<group>"; };
+		EBC674BA2C97380E00A7DFF8 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		EBC674BC2C973E1D00A7DFF8 /* AddQeustionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQeustionView.swift; sourceTree = "<group>"; };
+		EBC674BE2C992F5100A7DFF8 /* CardFront.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFront.swift; sourceTree = "<group>"; };
+		EBC674C02C99344500A7DFF8 /* CardBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,9 +68,11 @@
 		EBC674A02C96DCC200A7DFF8 /* FlashCards */ = {
 			isa = PBXGroup;
 			children = (
+				EBC674B62C96E0A400A7DFF8 /* Info.plist */,
 				EBC674A12C96DCC200A7DFF8 /* FlashCardsApp.swift */,
-				EBC674A32C96DCC200A7DFF8 /* ContentView.swift */,
+				EBC674B72C96E57D00A7DFF8 /* Views */,
 				EBC674A52C96DCC800A7DFF8 /* Assets.xcassets */,
+				EBC674B42C96DEC200A7DFF8 /* Belaga.otf */,
 				EBC674AA2C96DCC800A7DFF8 /* Persistence.swift */,
 				EBC674AC2C96DCC800A7DFF8 /* FlashCards.xcdatamodeld */,
 				EBC674A72C96DCC800A7DFF8 /* Preview Content */,
@@ -71,6 +86,19 @@
 				EBC674A82C96DCC800A7DFF8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EBC674B72C96E57D00A7DFF8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EBC674A32C96DCC200A7DFF8 /* ContentView.swift */,
+				EBC674BA2C97380E00A7DFF8 /* QuizView.swift */,
+				EBC674BE2C992F5100A7DFF8 /* CardFront.swift */,
+				EBC674C02C99344500A7DFF8 /* CardBack.swift */,
+				EBC674B82C96E59700A7DFF8 /* QuestionListView.swift */,
+				EBC674BC2C973E1D00A7DFF8 /* AddQeustionView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBC674A92C96DCC800A7DFF8 /* Preview Assets.xcassets in Resources */,
+				EBC674B52C96DEC200A7DFF8 /* Belaga.otf in Resources */,
 				EBC674A62C96DCC800A7DFF8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,10 +172,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBC674C12C99344500A7DFF8 /* CardBack.swift in Sources */,
+				EBC674BD2C973E1D00A7DFF8 /* AddQeustionView.swift in Sources */,
 				EBC674AB2C96DCC800A7DFF8 /* Persistence.swift in Sources */,
+				EBC674B92C96E59700A7DFF8 /* QuestionListView.swift in Sources */,
 				EBC674A42C96DCC200A7DFF8 /* ContentView.swift in Sources */,
 				EBC674AE2C96DCC800A7DFF8 /* FlashCards.xcdatamodeld in Sources */,
+				EBC674BF2C992F5100A7DFF8 /* CardFront.swift in Sources */,
 				EBC674A22C96DCC200A7DFF8 /* FlashCardsApp.swift in Sources */,
+				EBC674BB2C97380E00A7DFF8 /* QuizView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,11 +312,13 @@
 				DEVELOPMENT_TEAM = CXTXJQMUG9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FlashCards/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,11 +343,13 @@
 				DEVELOPMENT_TEAM = CXTXJQMUG9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FlashCards/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
