@@ -22,8 +22,6 @@ This is a simple FlashCard app built using **SwiftUI** and **Core Data**. It all
 ## Requirements
 
 - iOS 14.0+
-- Xcode 12.0+
-- Swift 5.3+
 
 ## Installation
 
